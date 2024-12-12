@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUN_GALLRY</title>
     <meta name="keywords" content="html , css , crochet , handmade , bags , scarf ">
-    <link rel="icon" href="assets/imgs/LOGO.jpg" sizes="32x32">
+    <link rel="icon" href="assets/imgs/logo1.PNG" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,6 +22,17 @@
             height: 250px;
             box-sizing: border-box;
             object-fit: cover;
+        }
+        .single-product .note{
+            width: 150px;
+  height:60px ;
+  padding: 5px;
+  font-size: 12px;
+padding-top: 0;
+margin-right: 10px;
+margin-bottom: 20px;
+background-color: rgba(250, 235, 215, 0.616); 
+border: solid 3px  rgb(104, 54, 16);
         }
      </style>
 </head>
@@ -94,13 +105,14 @@
                     </div>
                 </div>
             </div>
-<div class="col-lg-6 col-md-12 col-12">
+<div class="single-product col-lg-6 col-md-12 col-12">
     <h6>Bags</h6>
     <h3 class="py-4">handmade bag</h3>
     <h2>300EGP</h2>
-    <input type="text"/>
-
-    <button class="buy-btn">Add to cart</button>
+  <label class="note-label">Note</label>
+    <input class="note" type="text" />
+    <br>
+    <button  class="buy-btn">Add to cart</button>
     <h4 class="mt-5 mb-5">Product details</h4>
     <span>The details of this product Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, accusantium sit at doloribus vel ducimus obcaecati repellat! Officia, dicta voluptate est pariatur consequatur iure at facilis, expedita nulla quae dolorem.</span>
 </div>
@@ -218,7 +230,17 @@
             let currentIndex = 0;
         </script>
     <script src="script.js"></script>
+<script>
+var mainImg = document.getElementById("mainImg");
+var smallImg = document.getElementsByClassName("small-img");
+for(let i=0; i<4 ;i++){
+    smallImg[i].onclick = function(){
+        mainImg.src =  smallImg[i].src
+    }
+}
 
+
+</script>
 </body>
 
 </html>
