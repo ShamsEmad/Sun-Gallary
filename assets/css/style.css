@@ -615,6 +615,10 @@ footer{
   font-size: 16px;
   margin-right: 10px;
 }
+
+.single-product .note-label{
+  color: rgb(104, 54, 16);
+}
 .single-product input:focus{
   outline: none;
 }
@@ -632,7 +636,10 @@ transition: 0.4s all;
 }
 
 /*Cart*/
-
+.cart .note-label{
+  color: rgb(104, 54, 16);
+  font-size: 15px;
+}
 .cart table{
   width: 100%;
   border-collapse: collapse;
@@ -655,13 +662,26 @@ transition: 0.4s all;
   height: 80px;
   margin-right: 10px;
 }
-.cart td input{
+.cart td input {
   width: 150px;
-  height:50px ;
+  height:60px ;
   padding: 5px;
-  font-size: 15px;
+  font-size: 12px;
 padding-top: 0;
+margin-right: 10px;
+
 }
+.cart .note{
+  border: none;
+}
+
+.cart .note:hover , .cart .note:focus{
+  border: none;
+  background-color: rgba(250, 235, 215, 0.616); 
+  border: solid 3px  rgb(104, 54, 16);
+
+}
+
 .cart td a{
   color:  rgb(104, 54, 16);
 }
